@@ -15,7 +15,7 @@ import (
 	"github.com/santhosh-tekuri/jsonschema/v6"
 )
 
-const Namespace = "github.com/pucora/velonetics-jsonschema"
+const Namespace = "github.com/pucora/pucora-jsonschema"
 
 var ErrEmptyBody = &malformedError{err: errors.New("could not validate an empty body")}
 

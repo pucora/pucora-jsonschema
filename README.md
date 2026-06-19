@@ -1,4 +1,4 @@
-# velonetics-jsonschema
+# pucora-jsonschema
 A JSON schema validator for the Pucora API Gateway
 
 ## Usage
@@ -11,7 +11,7 @@ Include in your `pucora.json` the JSON Schema configuration associated to every 
 		{
 			"endpoint": "/foo",
 			"extra_config": {
-				"github.com/pucora/velonetics-jsonschema": {
+				"github.com/pucora/pucora-jsonschema": {
 					YOUR SCHEMA HERE
 				}
 			}
@@ -19,5 +19,5 @@ Include in your `pucora.json` the JSON Schema configuration associated to every 
 	]
 }
 ```
-The configuration key `"github.com/pucora/velonetics-jsonschema"` takes directly as value the schema definition. 
+The configuration key `"github.com/pucora/pucora-jsonschema"` takes directly as value the schema definition. 
 Examples of schema can be found [here](http://json-schema.org/learn/miscellaneous-examples.html)

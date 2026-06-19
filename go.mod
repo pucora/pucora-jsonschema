@@ -1,4 +1,4 @@
-module github.com/pucora/velonetics-jsonschema/v2
+module github.com/pucora/pucora-jsonschema/v2
 
 go 1.23.0
 
