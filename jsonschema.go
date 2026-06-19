@@ -9,13 +9,13 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/velonetics/lura/v2/config"
-	"github.com/velonetics/lura/v2/logging"
-	"github.com/velonetics/lura/v2/proxy"
+	"github.com/pucora/lura/v2/config"
+	"github.com/pucora/lura/v2/logging"
+	"github.com/pucora/lura/v2/proxy"
 	"github.com/santhosh-tekuri/jsonschema/v6"
 )
 
-const Namespace = "github.com/velonetics/velonetics-jsonschema"
+const Namespace = "github.com/pucora/velonetics-jsonschema"
 
 var ErrEmptyBody = &malformedError{err: errors.New("could not validate an empty body")}
 
