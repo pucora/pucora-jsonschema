@@ -8,7 +8,8 @@ require (
 )
 
 require (
+	github.com/dlclark/regexp2 v1.11.5 // indirect
 	github.com/pucora/flatmap v1.0.1 // indirect
 	github.com/valyala/fastrand v1.1.0 // indirect
-	golang.org/x/text v0.34.0 // indirect
+	golang.org/x/text v0.37.0 // indirect
 )
