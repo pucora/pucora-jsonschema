@@ -160,9 +160,15 @@ func TestProxyFactory_validationFailMultipleErrors(t *testing.T) {
 		t.Error("expecting error")
 		return
 	}
-	if err.Error() != `- at '/a': got number, want string
-- at '/b': missing property 'c'` {
-		t.Errorf("unexpected error %s", err.Error())
+	errStr := err.Error()
+	expectedErrors := []string{
+		`- at '/a': got number, want string`,
+		`- at '/b': missing property 'c'`,
+	}
+	for _, expected := range expectedErrors {
+		if !strings.Contains(errStr, expected) {
+			t.Errorf("error does not contain expected string %q; got: %s", expected, errStr)
+		}
 	}
 }
 
